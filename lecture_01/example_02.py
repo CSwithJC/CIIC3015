@@ -25,6 +25,7 @@ print("\nDivision Examples:")
 print("Division always returns floats, even if both numbers are ints")
 print(10 / 5)
 
+# PEMDAS
 print("\nPEMDAS Examples:")
 print("Notice how the parentheses change the results:")
 print("3 + (1 + 4) * 2 vs. 3 + 1 + 4 * 2")
