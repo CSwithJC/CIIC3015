@@ -3,6 +3,8 @@
 Multi-line
 Comments
 """
+
+# Mandatory hello world at the start of every intro to CS course ever :)
 print("Hello, World!")
 
 # Use type() to get the data type of values
