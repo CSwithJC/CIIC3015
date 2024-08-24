@@ -5,6 +5,8 @@ import math
 # Some common mathematical formulas used in everyday life
 
 # Converting Fahrenheit to Celsius
+# Using input() to prompt the user for the temperature:
+# fahrenheit = int(input("what is the temperature in fahrenheit?"))
 fahrenheit = 32
 celsius = (fahrenheit - 32) * 5 / 9
 print(fahrenheit, 'degrees Fahrenheit is equivalent to', celsius, 'Celsius')
