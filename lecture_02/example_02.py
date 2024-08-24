@@ -8,7 +8,7 @@ a_or_b = a or b
 not_a = not a
 
 print("a and b is", a_and_b)
-print("a ir b is", a_or_b)
+print("a or b is", a_or_b)
 print("not a is", not_a)
 
 # Combining logical operators (Examples from slides)
