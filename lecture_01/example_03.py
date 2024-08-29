@@ -35,9 +35,35 @@ y2 = 0.0
 distance = math.sqrt((x2-x1)**2+(y2-y1)**2)
 
 # Savings after one year earning simple interest
-# Savings after one year earning interest compounded monthly
-# Savings after one year earning interest continuously compounded
-# Quadratic Formula
-# Area of a triangle given the lengths of its 3 sides (Heron's Formula)
+annual_interest = 10
+balance_before = 100
+balance_after = balance_before * (1 + (annual_interest / 100))
+print(f'After one year {balance_before} dollars will grow to {balance_after:.2f}',
+      f'dollars at {annual_interest} percent annual interest')
+
+# Savings after n years earning simple interest
+annual_interest = 10
+balance_before = 100
+years = 5
+balance_after = balance_before * ((1 + (annual_interest / 100)) ** years)
+print(f'After {years} years {balance_before} dollars will grow to {balance_after:.2f}',
+      f'dollars at {annual_interest} percent annual interest')
+
+# Quadratic Formula to find zeros of polynomial ax^2 + bx + c
+a = 1
+b = 4
+c = -5
+discriminant = b*b - (4 * a * c)
+first_root = (-b + math.sqrt(discriminant)) / (2 * a)
+second_root = (-b - math.sqrt(discriminant)) / (2 * a)
+print(f'Roots of polynomial {a}x^2 + {b}x + {c} are {first_root} and {second_root}')
+
+# Area of a triangle given the lengths of its 3 sides a, b, and c (Heron's Formula)
+a = 3
+b = 4
+c = 5
+s = (a+b+c) / 2 # semiperimeter
+area = math.sqrt(s * (s - a) * (s-b) * (s - c))
+print(f'Area of triangle with sides {a}, {b}, and {c} is {area}')
 
 print('End of Examples')
