@@ -15,11 +15,10 @@ def greet_a_person(name):
 # 2b. Call the function with your name.
 greet_a_person("Jean Carlos")
 
-# 3a. Create a function receives a temperature in Celsius, converts to to
+# 3a. Create a function receives a temperature in Celsius, converts to
 # Fahrenheit and prints the converted temperature.
-print("\n3. Function that converts Celsius to Fahrenheit.")
+print("\n3. Function that converts Celsius to Fahrenheit and prints the value.")
 def convert_celsius_to_fahrenheit(celsius):
-  """Converts Celsius to Fahrenheit."""
   fahrenheit = 9 / 5 * celsius + 32
   print(fahrenheit)
 
