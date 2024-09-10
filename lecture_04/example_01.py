@@ -7,7 +7,6 @@ while index < number_of_times:
 
 # Prompt user to enter password and keep retrying until
 # the password matches.
-
 password = ''
 correct_password = 'helloworld'
 while password != correct_password:
