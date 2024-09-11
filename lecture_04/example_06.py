@@ -15,4 +15,3 @@ def multiplication_table_of(number):
 multiplication_table_of(5)
 multiplication_table_of(6)
 multiplication_table_of(9)
-
