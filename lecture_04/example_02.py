@@ -4,9 +4,10 @@
 #
 # while 1 == 1:, while 'a' == 'a':, while True, etc.
 
-# while True:
-#     print("Infinite loop")
-#
+# NOTE: You MUST comment this loop out to be able to run the following examples.
+while True:
+    print("Infinite loop")
+
 
 # Create a function that counts down from any number to 0
 # and prints the value.
