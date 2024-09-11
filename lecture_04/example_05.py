@@ -11,3 +11,13 @@ string_3 = "Programming is awesome!"
 print_all_characters_in_a_word(string_1)
 print_all_characters_in_a_word(string_2)
 print_all_characters_in_a_word(string_3)
+
+
+# Filter out vowels from a string.
+print("\nExample that filters out vowels from a string!")
+string = "Hello, world!"
+
+for char in string:
+    if char in "aeiouAEIOU":
+        continue
+    print(char)
