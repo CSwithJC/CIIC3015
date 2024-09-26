@@ -1,4 +1,4 @@
-# # Print all numbers from 0 to N using a for loop.
+# Print all numbers from 0 to N using a for loop.
 N = 100
 for num in range(0, N+1):
     print(num)
@@ -15,7 +15,7 @@ def print_pyramid(height, char):
 print_pyramid(100, '@')
 print_pyramid(50, '#')
 
-# # Print out the multiplication table for a specific number num.
+# Print out the multiplication table for a specific number num.
 print("\nMultiplication table example.")
 
 def multiplication_table_of(number):
