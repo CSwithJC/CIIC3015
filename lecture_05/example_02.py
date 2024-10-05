@@ -39,3 +39,10 @@ print(f"Original list: {names}")
 # Find the position in the list where "bienve" is:
 print(f"\nFetched the location of \'bienve\' using index():")
 print(names.index('bienve'))
+
+# Create a list with numbers 0 through 1000
+print(f"\nCreated a list with numbers 0 through 99:")
+numbers = []
+for num in range(100):
+    numbers.append(num)
+print(numbers)
