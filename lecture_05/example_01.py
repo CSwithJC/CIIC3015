@@ -20,3 +20,11 @@ print("\nPrint only the even numbers in the list using a for loop:")
 for num in numbers:
     if num % 2 == 0:
         print(num)
+
+# Access the last element of the list (with len()).
+print("\nLast element of list (using len()):")
+print(numbers[len(numbers)-1])
+
+# Access the last element of the list (with negative indexing).
+print("\nLast element of list (using negative indexing):")
+print(numbers[-1])
