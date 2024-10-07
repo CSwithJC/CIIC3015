@@ -34,11 +34,14 @@ for row in list_2d:
 
 # Iterate through the list and calculate the mean per row using a for loop:
 print("\nCalculate mean of all numbers using for loop.")
-total = 0
+# First, you must get the total sum of all numbers in the list, and the number of
+# elements in the list.
+total_sum = 0
+num_elements = 0
 for row in list_2d:
     for item in row:
-        total += item
-num_rows = len(list_2d)
-num_columns = len(list_2d[0])
-print(total / (num_rows * num_columns))
+        total_sum += item
+        num_elements += 1
+# Then, you must divide the total sum by the number of elements in the list.
+print(total_sum / num_elements)
 
