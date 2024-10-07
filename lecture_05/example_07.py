@@ -44,4 +44,3 @@ for row in list_2d:
         num_elements += 1
 # Then, you must divide the total sum by the number of elements in the list.
 print(total_sum / num_elements)
-
