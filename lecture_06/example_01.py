@@ -4,7 +4,6 @@ prices = {'burrito': 10.00, 'hamburger': 10.00}
 # Add some items alongside their prices.
 prices['water'] = 1.00
 prices['soda'] = 2.00
-
 print("Prices dictionary after adding more items:")
 print(prices)
 
