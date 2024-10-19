@@ -1,4 +1,4 @@
-# Print Numbers 0 through 99 recursively.
+# Print Numbers 0 through 99 using recursion.
 def recursive_print_aux(i, n):
     if i == n:
         return
