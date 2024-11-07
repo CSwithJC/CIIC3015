@@ -23,8 +23,18 @@ def recursive_add_nums_to_list(n):
     recursive_add_nums_to_list_aux(nums, n, 0)
     return nums
 
-print("\nAdd numbers 0 througn n-1 to a list recursively!")
+print("\nAdd numbers 0 through n-1 to a list recursively!")
 print(recursive_add_nums_to_list(100))
+
+print("\nReturn the total sum of all numbers in a list recursisvely!")
+def recursive_sum_of_a_list(nums):
+    if len(nums) == 0:
+        return 0
+    return nums[0] + recursive_sum_of_a_list(nums[1:])
+
+print(recursive_sum_of_a_list([100, -900, 10000, 5677]))
+print(recursive_sum_of_a_list([0, -900, 900]))
+
 
 # Return the power of a number recursively.
 def recursive_power_function(base, exponent):
