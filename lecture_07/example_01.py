@@ -88,7 +88,7 @@ def permutations(nums):
     # and add the original number alongside all the returned permutations as a new permutation.
     #
     # For example, if the list is [1, 2, 3], begin by saving 1. Get the permutations of the remaining numbers, which
-    # are [2, 3] (this returns a list with [2, 3] and [3, 2], add the one at the start (or end) of [2, 3] and [3, 2]
+    # are [2, 3] (this returns a list with [2, 3] and [3, 2]). Add the 1 at the start (or end) of [2, 3] and [3, 2]
     # and that creates the new permutations [1, 2, 3] and [1, 3, 2]. Continue the process by saving number 2,
     # generating the permutations of [1, 3], and repeating the process.
     perms = []
