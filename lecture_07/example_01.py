@@ -65,3 +65,41 @@ print("\nReverse a string recursively!")
 print(recursive_reverse_a_string("word"))
 print(recursive_reverse_a_string("task"))
 print(recursive_reverse_a_string("crazy"))
+
+"""
+Generate all permutations of a list.
+For example, the permutations of [1, 2, 3] are:
+[1,2,3]
+[1,3,2]
+[2,1,3]
+[2,3,1]
+[3,1,2]
+[3,2,1]
+"""
+def permutations(nums):
+    # Base case #1: nums is empty returns empty list (no permutations)
+    if len(nums) == 0:
+        return []
+    # Base case #2: nums only has one number returns a list with only one permutation
+    # (for example, [1] has only one number so the only perm is [1], so returns [[1]].
+    if len(nums) == 1:
+        return [nums]
+    # If not a base case, iterate through each number in nums, get the permutations of the remaining numbers in the list
+    # and add the original number alongside all the returned permutations as a new permutation.
+    #
+    # For example, if the list is [1, 2, 3], begin by saving 1. Get the permutations of the remaining numbers, which
+    # are [2, 3] (this returns a list with [2, 3] and [3, 2], add the one at the start (or end) of [2, 3] and [3, 2]
+    # and that creates the new permutations [1, 2, 3] and [1, 3, 2]. Continue the process by saving number 2,
+    # generating the permutations of [1, 3], and repeating the process.
+    perms = []
+    for i in range(len(nums)):
+        curr_num = nums[i]
+        remaining_nums = nums[:i] + nums[i+1:]
+        for perm in permutations(remaining_nums):
+            new_perm = [curr_num] + perm
+            perms.append(new_perm)
+    return perms
+
+print(permutations([1, 2, 3]))
+
+
