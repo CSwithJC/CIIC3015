@@ -26,17 +26,18 @@ def recursive_add_nums_to_list(n):
 print("\nAdd numbers 0 through n-1 to a list recursively!")
 print(recursive_add_nums_to_list(100))
 
-print("\nReturn the total sum of all numbers in a list recursisvely!")
+
+# Return the total sum of all numbers in a list recursively.
 def recursive_sum_of_a_list(nums):
     if len(nums) == 0:
         return 0
     return nums[0] + recursive_sum_of_a_list(nums[1:])
 
+print("\nReturn the total sum of all numbers in a list recursively!")
 print(recursive_sum_of_a_list([100, -900, 10000, 5677]))
 print(recursive_sum_of_a_list([0, -900, 900]))
 
-
-# Return the power of a number recursively.
+# Calculate the power of a number recursively.
 def recursive_power_function(base, exponent):
     if exponent == 0:
         return 1
@@ -45,7 +46,20 @@ def recursive_power_function(base, exponent):
 print("\nCalculate the power of a number recursively!")
 print(recursive_power_function(2, 6))
 
-# Find largest number of a list recursively.
+# Calculate if a string is a palindrome recursively!
+def recursive_is_palindrome(word):
+    if len(word) <= 1:
+        return True
+    return word[0] == word[-1] and recursive_is_palindrome(word[1:-1])
+
+print("\nCalculate if a string is a palindrome recursively!")
+print(recursive_is_palindrome("racecar"))
+print(recursive_is_palindrome("cat"))
+print(recursive_is_palindrome("sixaxis"))
+print(recursive_is_palindrome("tat"))
+print(recursive_is_palindrome("dog"))
+
+# Find the largest number of a list recursively.
 def recursive_largest_number_of_a_list(nums):
     if len(nums) == 1:
         return nums[0]
