@@ -39,7 +39,17 @@ print(recursive_power_function(2, 6))
 def recursive_largest_number_of_a_list(nums):
     if len(nums) == 1:
         return nums[0]
-    return max(nums[0], recursive_largest_number_of_a_list(nums[1:]))
+    if len(nums) == 2:
+        if nums[0] > nums[1]:
+            return nums[0]
+        else:
+            return nums[1]
+    largest_first_two = recursive_largest_number_of_a_list(nums[:2])
+    largest_remaining = recursive_largest_number_of_a_list(nums[2:])
+    if largest_first_two > largest_remaining:
+        return largest_first_two
+    else:
+        return largest_remaining
 
 print("\nLargest Number of a list recursively!")
 print(recursive_largest_number_of_a_list([100, 500, 40, 700, -50, 800]))
