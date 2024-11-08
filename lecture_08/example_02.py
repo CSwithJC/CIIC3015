@@ -26,14 +26,6 @@ class Student:
         """Returns the student's grade point average based on the grades thus far."""
         return sum(self.grades) / len(self.grades)
 
-    def add_grade(self, grade):
-        """Adds a new grade to the student's grades list.
-
-        Args:
-            grade: An int representing the student's new grade.
-        """
-        self.grades.append(grade)
-
 # Create a few students with the grades of their first three exams.
 michael = Student(
     first_name='Michael',
@@ -50,7 +42,7 @@ olivia = Student(
 print(michael.full_name())
 print(michael.grade_point_average())
 # Add a new grade to Michael's grades list and recalculate the grade average.
-michael.add_grade(75)
+michael.grades.append(75)
 print(michael.grade_point_average())
 
 # Get Olivia's full name and grade point average.
@@ -58,5 +50,5 @@ print('\n')
 print(olivia.full_name())
 print(olivia.grade_point_average())
 # Add a new grade to Olivia's grades list and recalculate the grade average.
-olivia.add_grade(115)
+olivia.grades.append(115)
 print(olivia.grade_point_average())
