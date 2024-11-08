@@ -46,14 +46,14 @@ olivia = Student(
     grades=[95, 80, 90]
 )
 
-# Get Michael's full name, and grade average.
+# Get Michael's full name and grade point average.
 print(michael.full_name())
 print(michael.grade_point_average())
 # Add a new grade to Michael's grades list and recalculate the grade average.
 michael.add_grade(75)
 print(michael.grade_point_average())
 
-# Get Olivia's full name, and grade average.
+# Get Olivia's full name and grade point average.
 print('\n')
 print(olivia.full_name())
 print(olivia.grade_point_average())
