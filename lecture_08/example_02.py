@@ -1,5 +1,5 @@
 class Character:
-    """This class models a simple student.
+    """This class models a simple Character.
 
     Attributes:
        name: A string of the character's name.
@@ -7,7 +7,7 @@ class Character:
        defense: A int representing the defense stat of a character.
    """
     def __init__(self, name, strength, defense):
-        """Initializes the instance based on the student's attributes.
+        """Initializes the instance based on the Character's attributes.
 
         Args:
             name: A string of the character's name.
